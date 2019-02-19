@@ -10,7 +10,7 @@ module.exports = function getLoveTrianglesCount(array = []) {
     for(let i=1; i<=preferences.length; i++){
       for(let k=i+1; k<=preferences.length; k++){
         for(let m=i+1; m<=preferences.length; m++){
-          if((i!=k&&k!=m&&i!=m)&&(preferences[i]==k&&preferences[k]==m&&preferences[m]==i)){
+          if(preferences[i]==k&&preferences[k]==m&&preferences[m]==i){
             count++;
           }
         }
